@@ -123,7 +123,7 @@ class CompanyGenerate extends Component {
                     </div>
                     <div className="form-group">
                       <label htmlFor="comp-gen_last">Last Name</label>
-                      <input type="text" id="comp-gen_first" className="form-control" onChange={(e) => this.setLast(e.target.value)} />
+                      <input type="text" id="comp-gen_last" className="form-control" onChange={(e) => this.setLast(e.target.value)} />
                     </div>
                   </form>
                 </div>

@@ -15,8 +15,14 @@ class CompanyDashView extends Component {
     return (
       <div className="company-dashboard">
         <div className="container company-container">
-          <SideNav />
-          <Routes />
+          <div className="row company-dashboard-row">
+            <div className="col col-lg-auto side-nav">
+              <SideNav />
+            </div>
+            <div className="col col-lg-auto company-dashboard-routes">
+              <Routes />
+            </div>
+          </div>
         </div>
       </div>
     )

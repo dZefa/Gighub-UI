@@ -5,8 +5,29 @@
 
 .company-container {
   padding-top: 57px;
+  height: 100%;
 }
 
 .gen-submit {
   text-align: center;
+}
+
+.company-dashboard-row {
+  height: 100%;
+}
+
+.gen-key-list {
+  text-align: center;
+}
+
+.side-nav {
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.company-dashboard-routes {
+  height: 100%;
+  padding-left: 169px;
+  width: 100%;
 }

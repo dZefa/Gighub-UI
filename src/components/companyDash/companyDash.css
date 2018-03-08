@@ -16,6 +16,10 @@
   height: 100%;
 }
 
+.company-job-button {
+  margin-left: 15px;
+}
+
 .gen-key-list {
   text-align: center;
 }

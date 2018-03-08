@@ -93,10 +93,12 @@ class CompanyGenerate extends Component {
         <div className="row justify-content-center login-row">
           <h3>Generated Keys</h3>
         </div>
-        <div className="row justify-content-center login-row">
+        <div>
           {
             Object.keys(keys).map((key, i) => (
-              <h5 key={`gen-key-${i}`}><strong>{key}: </strong>{keys[key]}</h5>
+              <div key={`gen-key-${i}`}>
+                <h5  className="gen-key-list"><strong>{key}: </strong>X</h5>
+              </div>
             ))
           }
         </div>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+import './sideNav.css';
 
 class SideNav extends Component {
   constructor(props) {
@@ -8,10 +10,10 @@ class SideNav extends Component {
 
   render() {
     return (
-      <div>
-        <Link exact="true" to="/companyDash">Jobs</Link>
-        <Link to="/companyDash/generate">Generate Key</Link>
-      </div>
+      <nav className="nav flex-column nav-pills">
+        <NavLink className="nav-link" exact to="/companyDash">Jobs</NavLink>
+        <NavLink className="nav-link" to="/companyDash/generate">Generate Key</NavLink>
+      </nav>
     )
   }
 };

@@ -11,6 +11,7 @@ class CompanyJobsView extends Component {
       endSalary: 0,
       startSalaryOptions: [],
       endSalaryOptions: [],
+      location: '',
     }
   }
 
@@ -59,6 +60,12 @@ class CompanyJobsView extends Component {
   setEnd(num) {
     this.setState({
       endSalary: parseInt(num),
+    });
+  }
+
+  setLocation(text) {
+    this.setState({
+      location: text,
     });
   }
 
@@ -124,6 +131,10 @@ class CompanyJobsView extends Component {
                           }
                         </select>
                       </div>
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="comp-job_loc">Location</label>
+                      <input type="text" id="comp-job_loc" className="form-control" placeholder="CITY, STATE or STATE, COUNTRY" onChange={(e) => this.setLocation(e.target.value)} />
                     </div>
                   </form>
                 </div>
